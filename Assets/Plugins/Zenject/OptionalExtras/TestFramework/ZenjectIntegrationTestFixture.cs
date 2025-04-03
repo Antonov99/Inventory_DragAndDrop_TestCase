@@ -1,12 +1,12 @@
 using System;
 using System.Collections;
 using Zenject.Internal;
-using ModestTree;
 using Assert = ModestTree.Assert;
 using System.Linq;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace Zenject
 {
@@ -120,11 +120,11 @@ namespace Zenject
                 // next test runs
                 if (immediate)
                 {
-                    GameObject.DestroyImmediate(_sceneContext.gameObject);
+                    Object.DestroyImmediate(_sceneContext.gameObject);
                 }
                 else
                 {
-                    GameObject.Destroy(_sceneContext.gameObject);
+                    Object.Destroy(_sceneContext.gameObject);
                 }
 
                 _sceneContext = null;
