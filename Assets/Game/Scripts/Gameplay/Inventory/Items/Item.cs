@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Game
 {
@@ -24,5 +25,10 @@ namespace Game
         public Transform AnchoredStartPoint => _anchoredStartPoint;
         public int Width => _width;
         public int Height => _height;
+        
+        private void Start()
+        {
+            GetComponentInChildren<Image>().alphaHitTestMinimumThreshold = 1f;
+        }
     }
 }

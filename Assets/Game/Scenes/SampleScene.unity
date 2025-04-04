@@ -385,6 +385,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9062646453943119498}
     m_Modifications:
+    - target: {fileID: 2213694494529951929, guid: ad48785450244874291ab1752af9353f, type: 3}
+      propertyPath: _width
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2213694494529951929, guid: ad48785450244874291ab1752af9353f, type: 3}
+      propertyPath: _height
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5329561592782085620, guid: ad48785450244874291ab1752af9353f, type: 3}
       propertyPath: m_Name
       value: Axe
@@ -469,7 +477,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6999572253066548578, guid: ad48785450244874291ab1752af9353f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
